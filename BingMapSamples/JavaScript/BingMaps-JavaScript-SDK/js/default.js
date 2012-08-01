@@ -135,7 +135,7 @@
         resetMapDiv();
         Microsoft.Maps.loadModule('Microsoft.Maps.Themes.BingTheme', {
             callback: function () {
-                var id = 'Your Bing Maps Key';
+                var id = 'AoUv-FMpF-A_zutBXGaP2Eh_GmpST6K5hyxByrOoY9uSPNY5TLT5dINTJbzyWCnk';
                 map = new Microsoft.Maps.Map(document.getElementById('mapdiv'),
                 {
                     credentials: id,
@@ -521,7 +521,7 @@ function initMap()
         var mapOptions =
         {
             // Add your Bing Maps key here
-            credentials: 'Your Bing Maps Key',
+            credentials: 'AoUv-FMpF-A_zutBXGaP2Eh_GmpST6K5hyxByrOoY9uSPNY5TLT5dINTJbzyWCnk',
             center: new Microsoft.Maps.Location(40.71, -74.00),
             mapTypeId: Microsoft.Maps.MapTypeId.road,
             zoom: 8
