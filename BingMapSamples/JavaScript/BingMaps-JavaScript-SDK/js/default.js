@@ -256,9 +256,9 @@
     function searchRequest()
     {
         createSearchManager();
-        var what = 'pizza';
+        var what = 'KFC'; //User Input
         var userData = { name: 'Maps Test User', id: 'XYZ' };
-        var where = 'boston, ma';
+        var where = 'chennai, india'; //lat & long Location
         var query = '';
         var request =
             {
@@ -278,6 +278,7 @@
     // business search api success callback
     function search_onSearchSuccess(result, userData)
     {
+        console.log(JSON.stringify(result));
         map.entities.clear();
         var searchResults = result && result.searchResults;
         if (searchResults)
